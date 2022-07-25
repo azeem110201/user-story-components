@@ -4,7 +4,7 @@ import Buttons from '../../atoms/buttons';
 import Icon from '../../atoms/icons';
 import TextTypography from '../../atoms/typography/index';
 
-type PopupProps = {
+interface PopupProps {
     style?: React.CSSProperties;
 }
 

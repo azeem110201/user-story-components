@@ -3,7 +3,7 @@ import React from 'react'
 import Icon from '../../atoms/icons';
 import TextTypography from '../../atoms/typography';
 
-type DropdownProps = {
+interface DropdownProps {
     text: React.ReactNode;
     icon: React.ReactNode;
     src: string;

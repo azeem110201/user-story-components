@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 import React from 'react'
 import TextTypography from '../../atoms/typography';
 
-type IconWithTextProps = {
+interface IconWithTextProps {
     icon: React.ReactNode;
     text: React.ReactNode;
 }

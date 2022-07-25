@@ -1,6 +1,6 @@
 import React from "react";
 
-type ThumbmailProps = {
+interface ThumbmailProps {
   src: string;
   alt?: string;
   onClick?: any;

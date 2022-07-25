@@ -1,35 +1,17 @@
-import { Button } from '@mui/material';
-import React from 'react';
+import { Button, ButtonProps } from "@mui/material";
+import React from "react";
 
-type ButtonsProps = {
-    children: React.ReactNode;
-    style?: React.CSSProperties;
-    onClick?: () => void;
-    size?: 'small'
-    | 'medium'
-    | 'large';
-    variant?: "contained" | "outlined" | "text";
+interface ButtonsProps extends ButtonProps {
+  style?: React.CSSProperties;
+  onClick?: () => void;
 }
 
 const Buttons = (props: ButtonsProps) => {
   return (
     <div>
-        <Button
-        onClick={props.onClick}
-        style={props.style}
-        sx={{
-            textTransfrom: "none",
-            "&:hover":{
-            backgroundColor: `#ffffff`
-          }
-        }}
-        variant={props.variant}
-        size={props.size}
-        >
-            {props.children}
-        </Button>
+      <Button onClick={props.onClick} sx={props.style} {...props} />
     </div>
-  )
-}
+  );
+};
 
-export default Buttons
+export default Buttons;

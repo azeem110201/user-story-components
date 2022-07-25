@@ -3,7 +3,7 @@ import React from 'react'
 import TextTypography from '../../atoms/typography';
 import TabPanel from '@mui/lab/TabPanel';
 
-type SecondarySelectedTabProps = {
+interface SecondarySelectedTabProps {
     style?: React.CSSProperties;
     firstTab: React.ReactNode;
     secondTab: React.ReactNode;

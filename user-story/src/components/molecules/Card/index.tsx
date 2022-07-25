@@ -1,7 +1,7 @@
 import { Grid, LinearProgress } from '@mui/material';
 import React from 'react'
 
-type CardProps = {
+interface CardProps {
     img: React.ReactNode;
     title: React.ReactNode;
     description: React.ReactNode;

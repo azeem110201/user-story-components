@@ -1,12 +1,12 @@
 import { Grid, TextField } from "@mui/material";
 import React from "react";
 
-type BookData = {
+export type BookData = {
   title: string;
   author: string;
 };
 
-type SearchProps = {
+interface SearchProps {
   style?: React.CSSProperties;
 };
 

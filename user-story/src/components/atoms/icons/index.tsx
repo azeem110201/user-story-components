@@ -2,7 +2,7 @@ import React from "react";
 import { ReactSVG } from "react-svg";
 import "./index.css";
 
-type IconsProps = {
+interface IconsProps {
   src: string;
   onClick?: () => void;
   children: React.ReactNode;

@@ -13,7 +13,7 @@ type SingleBook = {
     content?: React.ReactNode;
 }
 
-type SingleBookProps = {
+interface SingleBookProps {
     style?: React.CSSProperties;
     books: SingleBook;
 }
@@ -23,11 +23,11 @@ const SingleBook = (props: SingleBookProps) => {
     
     const getBooksData = async () => {
         const data = await api.get(`/books/${ID}`);
-        setBooks(data.response)
+        setBooks(data.response);
     }
     useEffect(() => {
         getBooksData();
-    }, [, books]);
+    }, []);
 
 
     const handleReadMe = () => {

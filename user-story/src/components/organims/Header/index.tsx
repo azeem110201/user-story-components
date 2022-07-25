@@ -5,7 +5,7 @@ import TextTypography from "../../atoms/typography";
 import SecondarySelectedTab from "../../molecules/SecondarySelectedTabs";
 import Search from "../Search";
 
-type HeaderProps = {
+interface HeaderProps {
   logo?: React.ReactNode;
   searchIcon?: React.ReactNode;
   link1?: React.ReactNode;

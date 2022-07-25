@@ -3,11 +3,11 @@ import React from 'react'
 import BooksThumbnail from '../../atoms/booksthumbnails'
 import TextTypography from '../../atoms/typography'
 
-type BannerProps = {
+interface BannerProps {
     text: React.ReactNode;
     style?: React.CSSProperties;
     src: string;
-}
+};
 
 const Banner = (props: BannerProps) => {
   return (
