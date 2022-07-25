@@ -19,7 +19,7 @@ const Input = () => {
   const [image, setImage] = useState<string>("/assets/child.jpg");
   const [profile, setProfile] = useState<string>("");
 
-  useEffect(() => {
+  const setPhoto = () => {
     age < 20
       ? setImage("/assets/child.jpg")
       : age < 60
@@ -30,6 +30,10 @@ const Input = () => {
       : gender.includes("Female")
       ? setProfile("/assets/women.jpeg")
       : setProfile("");
+  }
+
+  useEffect(() => {
+    setPhoto();
   }, [age, gender]);
 
   const handleSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
