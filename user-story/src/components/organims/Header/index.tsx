@@ -24,7 +24,7 @@ const Header = (props: HeaderProps) => {
     navigate("/");
   };
 
-  const goSomeWhere = () => {
+  const goToRequiredRoute = () => {
     // some code here
     navigate("/some-end-point");
   };
@@ -82,10 +82,10 @@ const Header = (props: HeaderProps) => {
                 }
               />
             ) : null}
-            <Grid item onClick={goSomeWhere}>
+            <Grid item onClick={goToRequiredRoute}>
               {props.link1}
             </Grid>
-            <Grid item onClick={goSomeWhere}>
+            <Grid item onClick={goToRequiredRoute}>
               {props.link2}
             </Grid>
           </>

@@ -8,7 +8,7 @@ interface SecondarySelectedTabProps {
     firstTab: React.ReactNode;
     secondTab: React.ReactNode;
     thirdTab: React.ReactNode;
-    content?: React.ReactNode;
+    content?: React.ReactNode[];
 }
 
 const SecondarySelectedTab = (props: SecondarySelectedTabProps) => {
@@ -32,9 +32,9 @@ const SecondarySelectedTab = (props: SecondarySelectedTabProps) => {
             <Tab value="three" label={ <TextTypography variant='subtitle1'>{props.thirdTab}</TextTypography> } />
 
             <Grid container direction="column">
-              <TabPanel style={props.style} value="one">{props.content}</TabPanel>
-              <TabPanel style={props.style} value="two">{props.content}</TabPanel>
-              <TabPanel style={props.style} value="three">{props.content}</TabPanel>
+              <TabPanel style={props.style} value="one">{props.content[0]}</TabPanel>
+              <TabPanel style={props.style} value="two">{props.content[1]}</TabPanel>
+              <TabPanel style={props.style} value="three">{props.content[2]}</TabPanel>
             </Grid>
         </Tabs>
     </div>

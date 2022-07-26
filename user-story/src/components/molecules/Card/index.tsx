@@ -1,4 +1,4 @@
-import { Grid, LinearProgress } from '@mui/material';
+import { Card, CardContent, Grid, LinearProgress } from '@mui/material';
 import React from 'react'
 
 interface CardProps {
@@ -13,7 +13,8 @@ const Card = (props: CardProps) => {
 
   return (
     <div>
-        <Grid container direction="column" style={props.style}>
+        <Card sx={props.style}>
+            <CardContent>
             <Grid item>
                 {props.img}
             </Grid>
@@ -29,7 +30,8 @@ const Card = (props: CardProps) => {
             <Grid item>
                 <LinearProgress variant="determinate" />
             </Grid>
-        </Grid>
+            </CardContent>
+        </Card>
     </div>
   )
 }
